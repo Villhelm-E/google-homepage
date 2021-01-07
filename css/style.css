@@ -6,27 +6,30 @@ body {
 }
 
 header {
-    height: 54px;
+    height: 64px;
     width: 100%;
     display: flex;
     flex-direction: row;
-    background-color: #66c;
-    flex: auto 0 auto;
+    justify-content: space-between;
 }
 
 .left-header {
     display: flex;
     flex-direction: row;
-    width: 150px;
-    background-color: #888844;
-
+    width: auto;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .right-header {
     display: flex;
     flex-direction: row;
-
-    background-color: #45f;
+    justify-content: space-evenly;
+    background-color: #f5f;
+    padding: 20px;
+    align-items: center;
+    width: auto;
 }
 
 a{
@@ -35,9 +38,36 @@ a{
 
 .left-text {
     color: #404040;
+    font-family: "Google", sans-serif;
+    margin: 15px;
 }
 
 .right-text {
     color: #212121;
+    margin: 15px;
+    font-family: "Google",sans-serif;
 }
 
+.apps-button {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.apps-svg {
+    width: 16px;
+    height: 16px;
+}
+
+.signin-button {
+    color: white;
+    font-family: "Google", sans-serif;
+    background: #458bf6;
+    padding: 5px;
+    border-radius: 4px;
+    width: 60px;
+    height: 20px;
+}
