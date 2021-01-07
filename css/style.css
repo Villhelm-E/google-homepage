@@ -1,0 +1,43 @@
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
+header {
+    height: 54px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #66c;
+    flex: auto 0 auto;
+}
+
+.left-header {
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    background-color: #888844;
+
+}
+
+.right-header {
+    display: flex;
+    flex-direction: row;
+
+    background-color: #45f;
+}
+
+a{
+    text-decoration: none;
+}
+
+.left-text {
+    color: #404040;
+}
+
+.right-text {
+    color: #212121;
+}
+
