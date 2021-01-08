@@ -35,6 +35,10 @@ a{
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 .left-text {
     color: #404040;
     font-family: "Google", sans-serif;
@@ -73,6 +77,10 @@ a{
     font-weight: bold;
 }
 
+.signin-button:hover {
+    text-decoration: none;
+}
+
 .google-logo-container {
     display: flex;
     justify-content: center;
@@ -89,7 +97,8 @@ a{
 
 .search-container {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .search-box-container {
@@ -128,6 +137,49 @@ input {
     font-size: 16px;
 }
 
+.search-buttons-container {
+    margin-top: 38px;
+}
+
+.search-button {
+    padding: 10px 15px 10px 15px;
+    font-family: "Google", sans-serif;
+    background-color: #f8f9fa;
+    font-size: 14px;
+    color: #3c4043;
+    margin: 5px;
+    border-radius: 2px;
+}
+
+.search-button:hover {
+    text-decoration: none;
+}
+
 .footer-container {
     width: 100%;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    border-top: 1px solid #dadce0;
+}
+
+.footer-text:first-of-type {
+    margin-left: 30px;
+}
+
+.footer-text:last-of-type {
+    margin-right: 30px;
+}
+
+.footer-text {
+    color: #70757a;
+    font-family: "Google", sans-serif;
+    font-size: 14px;
+    margin: 11px;
 }
