@@ -26,7 +26,6 @@ header, nav {
 }
 
 ul {
-    
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -101,10 +100,12 @@ a:hover {
     text-decoration: none;
 }
 
+/*The spacing between the nav bar and the Google logo is different on each browser */
+
 .google-logo-container {
     display: flex;
     justify-content: center;
-    padding-top: 134px; /* This is the spacing for Safari, not Firefox or Chrome */
+    padding-top: 134px; /* This is the spacing for Firefox and Safari when fullscreen, but only Firefox when half screen */
 }
 
 .google-logo {
@@ -177,7 +178,7 @@ input {
 }
 
 
-/* The footer in Chrome has a different behavior from Safari and Firefox for the footer */
+/* The footer in Chrome has a different behavior from Safari and Firefox */
 .footer-container {
     width: 100%;
     bottom: 0;
@@ -192,12 +193,12 @@ input {
     border-top: 1px solid #dadce0;
 }
 
-.footer-text:first-of-type {
-    margin-left: 30px;
+.left-footer {
+    margin-left: 25px;
 }
 
-.footer-text:last-of-type {
-    margin-right: 30px;
+.right-footer {
+    margin-right: 25px;
 }
 
 .footer-text {
