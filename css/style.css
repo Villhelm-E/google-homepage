@@ -104,7 +104,7 @@ a:hover {
 .google-logo-container {
     display: flex;
     justify-content: center;
-    padding-top: 134px; /* This is the spacing for Firefox, not Safari or Chrome */
+    padding-top: 134px; /* This is the spacing for Safari, not Firefox or Chrome */
 }
 
 .google-logo {
