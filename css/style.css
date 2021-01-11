@@ -5,7 +5,7 @@ body {
     margin: 0px;
 }
 
-header {
+header, nav {
     height: 64px;
     width: 100%;
     display: flex;
@@ -13,13 +13,29 @@ header {
     justify-content: space-between;
 }
 
-.left-header {
+/* ******************* */
+/* The look of Firefox */
+
+.left-header, ul {
     display: flex;
     flex-direction: row;
     width: auto;
     padding: 20px;
     justify-content: space-between;
     align-items: center;
+}
+
+ul {
+    
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
 }
 
 .right-header {
@@ -30,6 +46,9 @@ header {
     align-items: center;
     width: auto;
 }
+
+/* End the look of Firefox */
+/* *********************** */
 
 a{
     text-decoration: none;
@@ -53,6 +72,7 @@ a:hover {
 }
 
 .apps-button {
+    /* This is the look of the sign-in button for Chrome and Safari, not Firefox */
     width: 32px;
     height: 32px;
     display: flex;
@@ -64,7 +84,7 @@ a:hover {
 .apps-svg {
     width: 16px;
     height: 16px;
-    fill: #737373;
+    fill: #5f6368;
 }
 
 .signin-button {
@@ -84,7 +104,7 @@ a:hover {
 .google-logo-container {
     display: flex;
     justify-content: center;
-    padding-top: 134px;
+    padding-top: 134px; /* This is the spacing for Firefox, not Safari or Chrome */
 }
 
 .google-logo {
@@ -101,6 +121,7 @@ a:hover {
     flex-direction: column;
 }
 
+/* Chrome has a narrower search box compared to Safari and Firefox */
 .search-box-container {
     margin-top: 27px;
     border: 1px solid #dfe1e5;
@@ -155,6 +176,8 @@ input {
     text-decoration: none;
 }
 
+
+/* The footer in Chrome has a different behavior from Safari and Firefox for the footer */
 .footer-container {
     width: 100%;
     bottom: 0;

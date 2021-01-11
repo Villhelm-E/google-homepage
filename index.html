@@ -1,5 +1,10 @@
 <!doctype html>
 
+<!--I was working in Firefox, but have Safari as the default browser, which is how I discovered
+that the Google homepage looks different on different browsers. I was mostly done with this project
+when I discovered this, so my final page is a mixture of how it looks on Firefox and Safari. It looks
+mostly the same on Chrome and Safari.-->
+
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -10,29 +15,55 @@
 
     <body>
         <header>
-            <div class="left-header">
-                <a class="left-text" href="">About</a>
-                <a class="left-text" href="">Store</a>
-            </div></div>
-            </div>
-            <div class="right-header">
-                <a class="right-text" href="">Gmail</a>
-                <a class="right-text" href="">Images</a>
-                <div class="apps-button">
-                    <a class="apps-link" href="">
-                        <svg class="apps-svg">
-                            <path d="M 14 16 c 1.1 0 2 -0.9 2 -2 s -0.9 -2 -2 -2 s -2 0.9 -2 2 s 0.9 2 2 2 z M 8 16 c 1.1 0 2 -0.9 2 -2 s -0.9 -2 -2 -2 s -2 0.9 -2 2 s 0.9 2 2 2 z M 2 16 c 1.1 0 2 -0.9 2 -2 s -0.9 -2 -2 -2 s -2 0.9 -2 2 s 0.9 2 2 2 z M 14 10 c 1.1 0 2 -0.9 2 -2 s -0.9 -2 -2 -2 s -2 0.9 -2 2 s 0.9 2 2 2 z M 8 10 c 1.1 0 2 -0.9 2 -2 s -0.9 -2 -2 -2 s -2 0.9 -2 2 s 0.9 2 2 2 z M 2 10 c 1.1 0 2 -0.9 2 -2 s -0.9 -2 -2 -2 s -2 0.9 -2 2 s 0.9 2 2 2 z M 14 4 c 1.1 0 2 -0.9 2 -2 s -0.9 -2 -2 -2 s -2 0.9 -2 2 s 0.9 2 2 2 z M 8 4 c 1.1 0 2 -0.9 2 -2 s -0.9 -2 -2 -2 s -2 0.9 -2 2 s 0.9 2 2 2 z M 2 4 c 1.1 0 2 -0.9 2 -2 s -0.9 -2 -2 -2 s -2 0.92 -2 2 s 0.9 2 2 2 z"></path>
-                        </svg>
-                    </a>
+            <nav>
+                <!--The left part of the header-->
+                <div class="left-header">
+                    <ul>
+                        <li>
+                            <a class="left-text" href="">About</a>
+                        </li>
+                        <li>
+                            <a class="left-text" href="">Store</a>
+                        </li>
+                    </ul>
+                </div></div>
                 </div>
-                <a class="signin-button" href="">Sign in</a>
-            </div>
+                <!--The right part of the header-->
+                <div class="right-header">
+                    <ul>
+                        <li>
+                            <a class="right-text" href="">Gmail</a>
+                        </li>
+                        <li>
+                            <a class="right-text" href="">Images</a>
+                        </li>
+                        <!--The apps icon-->
+                        <li>
+                            <div class="apps-button">
+                                <a class="apps-link" href="">
+                                    <svg class="apps-svg">
+                                        <!-- The apps icon is different for Firefox. This is the icon for Firefox-->
+                                        <path d="M 14 16 c 1.1 0 2 -0.9 2 -2 s -0.9 -2 -2 -2 s -2 0.9 -2 2 s 0.9 2 2 2 z M 8 16 c 1.1 0 2 -0.9 2 -2 s -0.9 -2 -2 -2 s -2 0.9 -2 2 s 0.9 2 2 2 z M 2 16 c 1.1 0 2 -0.9 2 -2 s -0.9 -2 -2 -2 s -2 0.9 -2 2 s 0.9 2 2 2 z M 14 10 c 1.1 0 2 -0.9 2 -2 s -0.9 -2 -2 -2 s -2 0.9 -2 2 s 0.9 2 2 2 z M 8 10 c 1.1 0 2 -0.9 2 -2 s -0.9 -2 -2 -2 s -2 0.9 -2 2 s 0.9 2 2 2 z M 2 10 c 1.1 0 2 -0.9 2 -2 s -0.9 -2 -2 -2 s -2 0.9 -2 2 s 0.9 2 2 2 z M 14 4 c 1.1 0 2 -0.9 2 -2 s -0.9 -2 -2 -2 s -2 0.9 -2 2 s 0.9 2 2 2 z M 8 4 c 1.1 0 2 -0.9 2 -2 s -0.9 -2 -2 -2 s -2 0.9 -2 2 s 0.9 2 2 2 z M 2 4 c 1.1 0 2 -0.9 2 -2 s -0.9 -2 -2 -2 s -2 0.92 -2 2 s 0.9 2 2 2 z"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </li>
+                        <!--The signin button-->
+                        <li>
+                            <a class="signin-button" href="">Sign in</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </header>
         <main>
+            <!--Logo-->
             <div class="google-logo-container">
                 <img class="google-logo" src="googlelogo.png">
             </div>
+            <!--Search-->
             <div class="search-container">
+                <!--Search box-->
                 <div class="search-box-container">
                     <div class="search-icon">
                         <svg class="mg">
@@ -44,7 +75,9 @@
                             <input type="text">
                         </form>
                     </div>
+                    <!--Chrome has an addition microphone icon on the right side of the search box-->
                 </div>
+                <!--Search buttons-->
                 <div class="search-buttons-container">
                     <a class="search-button" href="">Google Search</a>
                     <a class="search-button" href="">I'm Feeling Lucky</a>
@@ -53,15 +86,36 @@
         </main>
         <footer>
             <div class="footer-container">
+                <!--Left side of the footer-->
                 <div class="left-footer">
-                    <a class="footer-text" href="">Advertising</a>
-                    <a class="footer-text" href="">Business</a>
-                    <a class="footer-text" href="">How Search works</a>
+                    <ul>
+                        <li>
+                            <a class="footer-text" href="">Advertising</a>
+                        </li>
+                        <li>
+                            <a class="footer-text" href="">Business</a>
+                        </li>
+                        <li>
+                            <a class="footer-text" href="">How Search works</a>
+                        </li>
+                    </ul>
                 </div>
+                
+                <!--Safari and Chrome have an additional item in the middle that says "Carbon neutral since 2007"-->
+                
+                <!--Right side of the footer-->
                 <div class="right-footer">
-                    <a class="footer-text" href="">Privacy</a>
-                    <a class="footer-text" href="">Terms</a>
-                    <a class="footer-text" href="">Settings</a>
+                    <ul>
+                        <li>
+                            <a class="footer-text" href="">Privacy</a>
+                        </li>
+                        <li>
+                            <a class="footer-text" href="">Terms</a>
+                        </li>
+                        <li>
+                            <a class="footer-text" href="">Settings</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </footer>
