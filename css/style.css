@@ -6,7 +6,7 @@ body {
 }
 
 header, nav {
-    height: 64px;
+    height: 80px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -72,12 +72,26 @@ a:hover {
 
 .apps-button {
     /* This is the look of the sign-in button for Chrome and Safari, not Firefox */
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 5px 20px 5px 5px;
+}
+
+.apps-link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.apps-link:hover {
+    background-color: rgba(60,64,67,0.08);
+    outline: none;
+    border-radius: 50%;
 }
 
 .apps-svg {
