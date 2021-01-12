@@ -108,6 +108,10 @@ a:hover {
     padding-top: 134px; /* This is the spacing for Firefox and Safari when fullscreen, but only Firefox when half screen */
 }
 
+.search-box-container:hover {
+    box-shadow: 0px 2px 10px 0px #dadada, 0px 10px 10px -10px #eaeaea, 0px 0px 2px 0px #dadada;
+}
+
 .google-logo {
     display: block;
     max-width: 272px;
@@ -144,6 +148,8 @@ a:hover {
 
 .mg {
     fill: #9aa0a6;
+    width: 16px;
+    height: 16px;
 }
 
 .search-box {
